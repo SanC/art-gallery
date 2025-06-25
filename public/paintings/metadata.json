@@ -1,0 +1,16 @@
+{
+  "Mona_Lisa.jpg": {
+    "title": "Mona Lisa",
+    "description": "A masterpiece of Renaissance art, featuring the enigmatic smile that has captivated viewers for centuries.",
+    "year": "1503-1519",
+    "medium": "Oil on poplar panel",
+    "artist": "Leonardo da Vinci"
+  },
+  "f24e3960c3016e48007f9f85b4804248.jpg": {
+    "title": "Abstract Composition",
+    "description": "A vibrant abstract piece exploring color theory and geometric forms.",
+    "year": "2023",
+    "medium": "Digital Art",
+    "artist": "Contemporary Artist"
+  }
+} 
