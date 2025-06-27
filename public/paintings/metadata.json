@@ -1,16 +1,100 @@
 {
   "amer-girl.jpg": {
-    "title": "Mona Lisa",
-    "description": "Acrylci painting of a girl",
+    "title": "American Girl",
+    "description": "A beautiful acrylic painting of a young girl with expressive features and warm tones",
     "year": "2018",
-    "medium": "Acryclic on  panel",
+    "medium": "Acrylic on panel",
     "artist": "Santhosh Cattavarayane"
   },
   "blue-girl.jpg": {
-    "title": "Mona Lisa",
-    "description": "Acrylci painting of a girl, inspired by Girl with a Pearl Earring",
+    "title": "Blue Girl",
+    "description": "An elegant portrait inspired by Girl with a Pearl Earring, featuring a young woman in blue tones",
     "year": "2018",
-    "medium": "Acryclic on  panel",
+    "medium": "Acrylic on panel",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "eye.jpg": {
+    "title": "The Eye",
+    "description": "A detailed and expressive painting focusing on the human eye, capturing emotion and depth",
+    "year": "2019",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "flower-vase.jpg": {
+    "title": "Flowers in Vase",
+    "description": "A vibrant still life painting featuring colorful flowers arranged in an elegant vase",
+    "year": "2020",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "flower-rose.jpg": {
+    "title": "Rose Bloom",
+    "description": "A delicate painting of a blooming rose, capturing the beauty and fragility of nature",
+    "year": "2020",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "flowers.jpg": {
+    "title": "Garden Flowers",
+    "description": "A colorful composition of various flowers in full bloom, celebrating the diversity of nature",
+    "year": "2020",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "landscape.jpg": {
+    "title": "Mountain Landscape",
+    "description": "A serene landscape painting featuring rolling hills and mountains in natural earth tones",
+    "year": "2021",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "lone-blue-bird.jpg": {
+    "title": "Lone Blue Bird",
+    "description": "A solitary blue bird perched on a branch, symbolizing freedom and tranquility",
+    "year": "2021",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "lotus.jpg": {
+    "title": "Lotus Flower",
+    "description": "A graceful lotus flower emerging from water, representing purity and spiritual growth",
+    "year": "2021",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "masters.jpg": {
+    "title": "The Masters",
+    "description": "A tribute to classical art masters, featuring iconic elements from famous artworks",
+    "year": "2022",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "masters-portrait.jpg": {
+    "title": "Master's Portrait",
+    "description": "A classical-style portrait inspired by the great masters of Renaissance art",
+    "year": "2022",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "mother.jpg": {
+    "title": "Mother's Love",
+    "description": "A tender portrait capturing the warmth and unconditional love of motherhood",
+    "year": "2022",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "swan.jpg": {
+    "title": "Graceful Swan",
+    "description": "An elegant swan gliding across calm waters, embodying beauty and grace",
+    "year": "2023",
+    "medium": "Acrylic on canvas",
+    "artist": "Santhosh Cattavarayane"
+  },
+  "yellow-bird.jpg": {
+    "title": "Yellow Bird",
+    "description": "A cheerful yellow bird with vibrant plumage, bringing joy and energy to the canvas",
+    "year": "2023",
+    "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane"
   }
 } 

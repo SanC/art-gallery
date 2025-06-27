@@ -34,7 +34,7 @@ const About: React.FC = () => {
             {/* Bio */}
             <div className="md:w-2/3 p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Sarah Johnson
+                Santhosh Cattavarayane (San C)
               </h2>
               <p className="text-lg text-gray-600 mb-6">
                 I'm a passionate artist with over 10 years of experience in various painting mediums. 

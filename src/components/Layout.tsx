@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link to="/" className="text-2xl font-bold text-gray-800">
-                Art Gallery
+                    SanC Art Gallery
               </Link>
             </div>
             <div className="flex items-center space-x-8">

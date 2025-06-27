@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         </div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Welcome to SANC Art Gallery
+            Welcome to SanC Art Gallery
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Discover the beauty of contemporary art through my collection of paintings and digital artwork
