@@ -24,14 +24,14 @@ const Home: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1958&q=80')",
+            backgroundImage: "url('/paintings/flower-vase.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Welcome to My Art Gallery
+            Welcome to SANC Art Gallery
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
             Discover the beauty of contemporary art through my collection of paintings and digital artwork
