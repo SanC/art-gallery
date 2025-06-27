@@ -5,7 +5,7 @@
     "year": "2018",
     "medium": "Acrylic on panel",
     "artist": "Santhosh Cattavarayane",
-    "order": 1
+    "order": 2
   },
   "blue-girl.jpg": {
     "title": "Blue Girl",
@@ -13,7 +13,7 @@
     "year": "2018",
     "medium": "Acrylic on panel",
     "artist": "Santhosh Cattavarayane",
-    "order": 2
+    "order": 5
   },
   "eye.jpg": {
     "title": "The Eye",
@@ -21,7 +21,7 @@
     "year": "2019",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 3
+    "order": 6
   },
   "flower-vase.jpg": {
     "title": "Flowers in Vase",
@@ -29,7 +29,7 @@
     "year": "2020",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 4
+    "order": 1
   },
   "flower-rose.jpg": {
     "title": "Rose Bloom",
@@ -37,7 +37,7 @@
     "year": "2020",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 5
+    "order": 7
   },
   "flowers.jpg": {
     "title": "Garden Flowers",
@@ -45,7 +45,7 @@
     "year": "2020",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 6
+    "order": 8
   },
   "landscape.jpg": {
     "title": "Mountain Landscape",
@@ -53,7 +53,7 @@
     "year": "2021",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 7
+    "order": 9
   },
   "lone-blue-bird.jpg": {
     "title": "Lone Blue Bird",
@@ -61,7 +61,7 @@
     "year": "2021",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 8
+    "order": 10
   },
   "lotus.jpg": {
     "title": "Lotus Flower",
@@ -69,7 +69,7 @@
     "year": "2021",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 9
+    "order": 11
   },
   "masters.jpg": {
     "title": "The Masters",
@@ -77,7 +77,7 @@
     "year": "2022",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 10
+    "order": 3
   },
   "masters-portrait.jpg": {
     "title": "Master's Portrait",
@@ -85,7 +85,7 @@
     "year": "2022",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 11
+    "order": 12
   },
   "mother.jpg": {
     "title": "Mother's Love",
@@ -93,7 +93,7 @@
     "year": "2022",
     "medium": "Acrylic on canvas",
     "artist": "Santhosh Cattavarayane",
-    "order": 12
+    "order": 4
   },
   "swan.jpg": {
     "title": "Graceful Swan",
