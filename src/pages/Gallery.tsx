@@ -21,12 +21,33 @@ const Gallery: React.FC = () => {
   const openModal = (painting: Painting) => {
     setSelectedPainting(painting);
     setIsModalOpen(true);
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
     setSelectedPainting(null);
+    // Restore body scroll
+    document.body.style.overflow = 'unset';
   };
+
+  // Close modal on escape key
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isModalOpen) {
+        closeModal();
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener('keydown', handleEscape);
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [isModalOpen]);
 
   if (loading) {
     return (
@@ -205,40 +226,63 @@ const Gallery: React.FC = () => {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Immersive Lightbox Modal */}
       {isModalOpen && selectedPainting && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
-          <div className="relative max-w-6xl max-h-full">
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 p-4"
+          onClick={closeModal}
+        >
+          <div className="relative w-full h-full flex items-center justify-center">
+            {/* Close button - top right */}
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 text-white hover:text-gray-300 z-10 bg-black bg-opacity-50 rounded-full p-3 hover:bg-opacity-70 transition-all duration-300"
+              className="absolute top-6 right-6 text-white hover:text-gray-300 z-20 bg-black bg-opacity-50 rounded-full p-4 hover:bg-opacity-70 transition-all duration-300 backdrop-blur-sm"
+              aria-label="Close image"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
+
+            {/* Image container - click outside to close */}
+            <div 
+              className="relative max-w-[95vw] max-h-[95vh] flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
               <img
                 src={selectedPainting.src}
                 alt={selectedPainting.metadata.title}
-                className="max-h-[70vh] w-full object-contain"
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                style={{ 
+                  maxWidth: '95vw', 
+                  maxHeight: '95vh',
+                  objectFit: 'contain'
+                }}
               />
-              <div className="p-8">
-                <h3 className="text-3xl font-bold text-gray-900 mb-4">
+            </div>
+
+            {/* Artwork info - bottom overlay */}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-8 text-white">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-4xl font-bold mb-2">
                   {selectedPainting.metadata.title}
-                </h3>
-                <p className="text-xl text-blue-600 mb-2">
+                </h2>
+                <p className="text-xl text-blue-300 mb-1">
                   {selectedPainting.metadata.artist}
                 </p>
-                <p className="text-lg text-gray-600 mb-4">
+                <p className="text-lg text-gray-300 mb-3">
                   {selectedPainting.metadata.year} • {selectedPainting.metadata.medium}
                 </p>
-                <p className="text-gray-700 text-lg leading-relaxed mb-6">
+                <p className="text-lg text-gray-200 leading-relaxed max-w-3xl">
                   {selectedPainting.metadata.description}
                 </p>
-                <p className="text-gray-500 text-sm">
-                  Press ESC or click outside to close
-                </p>
+              </div>
+            </div>
+
+            {/* Close hint */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+              <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded-full text-sm backdrop-blur-sm opacity-0 animate-pulse">
+                Click outside or press ESC to close
               </div>
             </div>
           </div>
