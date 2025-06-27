@@ -267,15 +267,6 @@ const Gallery: React.FC = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-2">
                   {selectedPainting.metadata.title}
                 </h2>
-                <p className="text-xl text-blue-300 mb-1">
-                  {selectedPainting.metadata.artist}
-                </p>
-                <p className="text-lg text-gray-300 mb-3">
-                  {selectedPainting.metadata.year} • {selectedPainting.metadata.medium}
-                </p>
-                <p className="text-lg text-gray-200 leading-relaxed max-w-3xl">
-                  {selectedPainting.metadata.description}
-                </p>
               </div>
             </div>
           </div>
