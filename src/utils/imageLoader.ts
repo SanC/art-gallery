@@ -4,6 +4,7 @@ export interface ImageMetadata {
   year: string;
   medium: string;
   artist: string;
+  order: number;
 }
 
 export interface Painting {
@@ -24,12 +25,15 @@ export const loadImages = async (): Promise<Painting[]> => {
     // For now, we'll use the files we know exist and any new ones added to metadata
     const imageFiles = Object.keys(metadata);
     
-    return imageFiles.map((filename, index) => ({
+    const paintings = imageFiles.map((filename, index) => ({
       id: (index + 1).toString(),
       filename,
       src: `/paintings/${filename}`,
       metadata: metadata[filename]
     }));
+
+    // Sort paintings by the order field
+    return paintings.sort((a, b) => a.metadata.order - b.metadata.order);
   } catch (error) {
     console.error('Error loading images:', error);
     return [];
@@ -57,7 +61,7 @@ export const getImageByFilename = async (filename: string): Promise<Painting | n
   }
 };
 
-// Function to get featured images (first 6 images)
+// Function to get featured images (first 6 images by order)
 export const getFeaturedImages = async (): Promise<Painting[]> => {
   const allImages = await loadImages();
   return allImages.slice(0, 6);
