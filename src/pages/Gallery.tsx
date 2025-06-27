@@ -278,13 +278,6 @@ const Gallery: React.FC = () => {
                 </p>
               </div>
             </div>
-
-            {/* Close hint */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-              <div className="bg-black bg-opacity-50 text-white px-4 py-2 rounded-full text-sm backdrop-blur-sm opacity-0 animate-pulse">
-                Click outside or press ESC to close
-              </div>
-            </div>
           </div>
         </div>
       )}
